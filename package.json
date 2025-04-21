@@ -1,7 +1,10 @@
 {
   "name": "mock-nanoid",
-  "version": "1.0.0",
-  "main": "dist/index.js",
+  "version": "0.1.0",
+  "exports": {
+    ".": "./dist/index.js",
+    "./non-secure": "./dist/non-secure/index.js"
+  },
   "scripts": {
     "build": "tsc && npm run copy-files",
     "copy-files": "copyfiles -u 1 \"src/**/*.{json,html,css}\" \"!src/**/__tests__/**/*\" dist",
