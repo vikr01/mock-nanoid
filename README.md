@@ -21,7 +21,7 @@ nanoid(3); // '001'
 nanoid.resetMock(5); // clears only length 5
 
 nanoid(3); // '002'
-nanoid(5); // '00002'
+nanoid(5); // '00000'
 ```
 
 For mocks not yet built, we just re-export nanoid's functions.
