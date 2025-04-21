@@ -1,0 +1,51 @@
+{
+  "name": "mock-nanoid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist --extensions \".js,.ts\" --ignore \"**/__tests__/**\" && npm run copy-files",
+    "copy-files": "copyfiles -u 1 \"src/**/*.{json,html,css}\" \"!src/**/__tests__/**/*\" dist",
+    "test": "jest",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikr01/mock-nanoid.git"
+  },
+  "author": {
+    "name": "Vik R",
+    "email": "vik120@icloud.com",
+    "url": "https://github.com/vikr01/"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vikr01/mock-nanoid/issues"
+  },
+  "homepage": "https://github.com/vikr01/mock-nanoid#readme",
+  "description": "",
+  "peerDependencies": {
+    "nanoid": "^5.1.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.26.3",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-typescript": "^7.27.0",
+    "@eslint/js": "^9.25.0",
+    "@tsconfig/recommended": "^1.0.8",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.14.1",
+    "babel-jest": "^29.7.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^9.25.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "jest": "^29.7.0",
+    "nanoid": "^5.1.5",
+    "prettier": "^3.5.3",
+    "standard": "^17.1.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.30.1"
+  }
+}
